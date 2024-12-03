@@ -24,7 +24,6 @@ def generate_combinations(input_string):
         for index, value in zip(question_mark_indices, binary_combination):
             temp_string[index] = '#' if value == '1' else '.'
         combinations.append("".join(temp_string))
-    print(f"Combinations for {input_string}")
     return combinations
 
 def count_groups(input_string):

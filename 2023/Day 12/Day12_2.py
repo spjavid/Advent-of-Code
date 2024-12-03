@@ -1,4 +1,6 @@
 from functools import cache
+import time
+
 def picross(file_path):
     with open(file_path, 'r') as file:
         lines = [x.split() for x in file.read().splitlines()]
@@ -45,5 +47,7 @@ def recurse(lava, springs, result=0):
     return result
 
         
-file_path = "C:\\Users\\sjavi\\OneDrive\\Documents\\Advent of Code\\2023\\Day 12\\Day12.txt"       
+file_path = "C:\\Users\\sjavi\\OneDrive\\Documents\\Advent of Code\\2023\\Day 12\\Day12.txt"
+start_time = time.time()
 picross(file_path)
+print("--- %s seconds ---" % (time.time() - start_time))
