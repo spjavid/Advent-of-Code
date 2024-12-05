@@ -1,0 +1,1 @@
+Sum of numbers adjacent to symbols (excluding '.' symbols): 0
