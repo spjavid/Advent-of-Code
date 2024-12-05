@@ -1,2 +1,0 @@
-Sum of numbers adjacent to symbols (excluding '.' symbols): 4361
-98)
